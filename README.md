@@ -1,5 +1,7 @@
 # TDD-Swift
 
+Prove your code is working every step of the way using a formalized test-driven development (TDD) process in Swift
+
 ## Table of Contents ##
 
 - [1. Course Detail](#1-course-detail)
@@ -10,15 +12,15 @@
 
 ## 1. Course Detail
 
-Title - [**Swift TDD - Test Driven Development for Swift no more bugs**](https://www.udemy.com/course/tdd-swift/)
+Title: [**Swift TDD - Test Driven Development for Swift no more bugs**](https://www.udemy.com/course/tdd-swift/)
 
-Date - Jan 1, 2021 - Jan 3, 2021
+Date: Jan 1, 2021 - Jan 3, 2021
 
 ---
 
 ## 2. What I learned
 
-Notes - [**Unit Testing and UI Testing**](https://www.notion.so/Unit-Testing-and-UI-Testing-69935cb6f47042d6aea8030a8295939e)
+Notes: [**Unit Testing and UI Testing**](https://www.notion.so/Unit-Testing-and-UI-Testing-69935cb6f47042d6aea8030a8295939e)
 
 - Unit Test
 - Code Coverage
