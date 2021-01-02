@@ -9,11 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - Properties
+    @IBOutlet weak var textField1: UITextField!
+    @IBOutlet weak var textField2: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    // MARK: - Selectors
+    @IBAction func handleButton(_ sender: UIButton) {
+        
+    }
 }
 
