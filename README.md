@@ -2,13 +2,15 @@
 
 ## Course Detail
 
-[**Test Driven Development for Swift**](https://www.udemy.com/course/tdd-swift/)
+Title - [**Test Driven Development for Swift**](https://www.udemy.com/course/tdd-swift/)
 
-Jan 1, 2020 - Jan 3, 2020
+Date - Jan 1, 2021 - Jan 3, 2021
 
 ---
 
 ## What I learned
+
+Notes - [**Unit Testing and UI Testing**](https://www.notion.so/Unit-Testing-and-UI-Testing-69935cb6f47042d6aea8030a8295939e)
 
 - Unit Test
 - Code Coverage
