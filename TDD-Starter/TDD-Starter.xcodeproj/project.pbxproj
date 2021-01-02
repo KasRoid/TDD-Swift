@@ -15,6 +15,8 @@
 		423F7646259FF0E100C32638 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423F7644259FF0E100C32638 /* LaunchScreen.storyboard */; };
 		423F764F259FF7E300C32638 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F764E259FF7E300C32638 /* CalculatorBrain.swift */; };
 		423F765A259FFA8000C32638 /* TDD_StarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F7659259FFA8000C32638 /* TDD_StarterTests.swift */; };
+		423F766425A09D0E00C32638 /* OnlineCalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F766325A09D0E00C32638 /* OnlineCalculatorBrain.swift */; };
+		423F767C25A09E0900C32638 /* OnlineCalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F767B25A09E0900C32638 /* OnlineCalculatorTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		423F7657259FFA8000C32638 /* TDD-StarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDD-StarterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		423F7659259FFA8000C32638 /* TDD_StarterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_StarterTests.swift; sourceTree = "<group>"; };
 		423F765B259FFA8000C32638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423F766325A09D0E00C32638 /* OnlineCalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineCalculatorBrain.swift; sourceTree = "<group>"; };
+		423F767B25A09E0900C32638 /* OnlineCalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineCalculatorTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 				423F763D259FF0E000C32638 /* ViewController.swift */,
 				423F763F259FF0E000C32638 /* Main.storyboard */,
 				423F764E259FF7E300C32638 /* CalculatorBrain.swift */,
+				423F766325A09D0E00C32638 /* OnlineCalculatorBrain.swift */,
 				423F7651259FF80800C32638 /* Supports */,
 				423F7647259FF0E100C32638 /* Info.plist */,
 			);
@@ -104,6 +109,7 @@
 		423F7658259FFA8000C32638 /* TDD-StarterTests */ = {
 			isa = PBXGroup;
 			children = (
+				423F767B25A09E0900C32638 /* OnlineCalculatorTest.swift */,
 				423F7659259FFA8000C32638 /* TDD_StarterTests.swift */,
 				423F765B259FFA8000C32638 /* Info.plist */,
 			);
@@ -212,6 +218,7 @@
 			files = (
 				423F763E259FF0E000C32638 /* ViewController.swift in Sources */,
 				423F763A259FF0E000C32638 /* AppDelegate.swift in Sources */,
+				423F766425A09D0E00C32638 /* OnlineCalculatorBrain.swift in Sources */,
 				423F764F259FF7E300C32638 /* CalculatorBrain.swift in Sources */,
 				423F763C259FF0E000C32638 /* SceneDelegate.swift in Sources */,
 			);
@@ -221,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423F767C25A09E0900C32638 /* OnlineCalculatorTest.swift in Sources */,
 				423F765A259FFA8000C32638 /* TDD_StarterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

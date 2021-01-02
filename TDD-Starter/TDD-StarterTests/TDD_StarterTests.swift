@@ -21,25 +21,29 @@ class TDD_StarterTests: XCTestCase {
     }
 
     func test10DivideBy5MustBe2() {
-        let result = calculatorBrain.divideTwoNumbers(dividend: 10, divisor: 5)
-        XCTAssert(result == 2, "Result must be 2")
+        calculatorBrain.divideTwoNumbers(dividend: 10,
+                                         divisor: 5,
+                                         completion: { result, error in
+                                            XCTAssert(result == 2, "Result must be 2")
+                                         })
     }
     
     func test10DivideBy0MustBeNil() {
-        let result = calculatorBrain.divideTwoNumbers(dividend: 10, divisor: 0)
-        XCTAssertNil(result, "Result must be nil")
+        calculatorBrain.divideTwoNumbers(dividend: 10,
+                                         divisor: 0,
+                                         completion: { result, error in
+                                            XCTAssertNil(result, "Result must be nil")
+                                            XCTAssert(error?.domain == "Error dividing by Zero", "Error Message should be Error dividing by Zero")
+                                         })
     }
     
-//    func testExample() throws {
-//        // This is an example of a functional test case.
-//        // Use XCTAssert and related functions to verify your tests produce the correct results.
-//    }
-//
-//    func testPerformanceExample() throws {
-//        // This is an example of a performance test case.
-//        measure {
-//            // Put the code you want to measure the time of here.
-//        }
-//    }
-
+    func testDivisionTime() {
+        measure {
+            self.calculatorBrain.divideTwoNumbers(dividend: 10,
+                                                  divisor: 2,
+                                                  completion: { result, error in
+                                                    
+                                                  })
+        }
+    }
 }
