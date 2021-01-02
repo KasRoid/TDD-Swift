@@ -21,7 +21,7 @@ class OnlineCalculatorTest: XCTestCase {
     }
     
     func testRetrieveURLFor10DivideBy2() {
-        let url = URL(string: "www.calcatraz.com/calculator/api?c=10%2F2")
+        let url = URL(string: "https://api.mathjs.org/v4/10%2F2")
         let response = onlineCalc.retrieveURLForDivision(dividend: 10, divisor: 2)
         XCTAssert(url == response, "URL is incorrect.")
     }
@@ -30,5 +30,16 @@ class OnlineCalculatorTest: XCTestCase {
         let url = URL(string: "www.calcatraz.com/calculator/api?c=20%2F2")
         let response = onlineCalc.retrieveURLForDivision(dividend: 10, divisor: 2)
         XCTAssert(url != response, "URL must not be equal.")
+    }
+    
+    func testCalculateDivisionOnlineFor10DivideBy2ShouldBe5() {
+        let expect = expectation(description: "Expected call back from API fail")
+        onlineCalc.calculateWithTwoNumbers(dividend: 20,
+                                           divisor: 2,
+                                           completionHander: { result in
+                                            XCTAssert(result == 10, "Response should be 10")
+                                            expect.fulfill()
+                                           })
+        waitForExpectations(timeout: 3, handler: nil)
     }
 }
