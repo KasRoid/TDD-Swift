@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     // MARK: - Properties
+    private let calculatorBrain = CalculatorBrain()
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var resultLabel: UILabel!

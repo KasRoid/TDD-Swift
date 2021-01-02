@@ -13,7 +13,19 @@
 		423F7641259FF0E000C32638 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423F763F259FF0E000C32638 /* Main.storyboard */; };
 		423F7643259FF0E100C32638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423F7642259FF0E100C32638 /* Assets.xcassets */; };
 		423F7646259FF0E100C32638 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423F7644259FF0E100C32638 /* LaunchScreen.storyboard */; };
+		423F764F259FF7E300C32638 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F764E259FF7E300C32638 /* CalculatorBrain.swift */; };
+		423F765A259FFA8000C32638 /* TDD_StarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F7659259FFA8000C32638 /* TDD_StarterTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		423F765C259FFA8000C32638 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423F762E259FF0E000C32638 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 423F7635259FF0E000C32638;
+			remoteInfo = "TDD-Starter";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		423F7636259FF0E000C32638 /* TDD-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TDD-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,21 @@
 		423F7642259FF0E100C32638 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		423F7645259FF0E100C32638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		423F7647259FF0E100C32638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423F764E259FF7E300C32638 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		423F7657259FFA8000C32638 /* TDD-StarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDD-StarterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		423F7659259FFA8000C32638 /* TDD_StarterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_StarterTests.swift; sourceTree = "<group>"; };
+		423F765B259FFA8000C32638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		423F7633259FF0E000C32638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423F7654259FFA8000C32638 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				423F7638259FF0E000C32638 /* TDD-Starter */,
+				423F7658259FFA8000C32638 /* TDD-StarterTests */,
 				423F7637259FF0E000C32638 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				423F7636259FF0E000C32638 /* TDD-Starter.app */,
+				423F7657259FFA8000C32638 /* TDD-StarterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +81,33 @@
 		423F7638259FF0E000C32638 /* TDD-Starter */ = {
 			isa = PBXGroup;
 			children = (
-				423F7639259FF0E000C32638 /* AppDelegate.swift */,
-				423F763B259FF0E000C32638 /* SceneDelegate.swift */,
 				423F763D259FF0E000C32638 /* ViewController.swift */,
 				423F763F259FF0E000C32638 /* Main.storyboard */,
-				423F7642259FF0E100C32638 /* Assets.xcassets */,
-				423F7644259FF0E100C32638 /* LaunchScreen.storyboard */,
+				423F764E259FF7E300C32638 /* CalculatorBrain.swift */,
+				423F7651259FF80800C32638 /* Supports */,
 				423F7647259FF0E100C32638 /* Info.plist */,
 			);
 			path = "TDD-Starter";
+			sourceTree = "<group>";
+		};
+		423F7651259FF80800C32638 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				423F7642259FF0E100C32638 /* Assets.xcassets */,
+				423F7639259FF0E000C32638 /* AppDelegate.swift */,
+				423F763B259FF0E000C32638 /* SceneDelegate.swift */,
+				423F7644259FF0E100C32638 /* LaunchScreen.storyboard */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		423F7658259FFA8000C32638 /* TDD-StarterTests */ = {
+			isa = PBXGroup;
+			children = (
+				423F7659259FFA8000C32638 /* TDD_StarterTests.swift */,
+				423F765B259FFA8000C32638 /* Info.plist */,
+			);
+			path = "TDD-StarterTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +130,24 @@
 			productReference = 423F7636259FF0E000C32638 /* TDD-Starter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		423F7656259FFA8000C32638 /* TDD-StarterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423F765E259FFA8000C32638 /* Build configuration list for PBXNativeTarget "TDD-StarterTests" */;
+			buildPhases = (
+				423F7653259FFA8000C32638 /* Sources */,
+				423F7654259FFA8000C32638 /* Frameworks */,
+				423F7655259FFA8000C32638 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				423F765D259FFA8000C32638 /* PBXTargetDependency */,
+			);
+			name = "TDD-StarterTests";
+			productName = "TDD-StarterTests";
+			productReference = 423F7657259FFA8000C32638 /* TDD-StarterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +159,10 @@
 				TargetAttributes = {
 					423F7635259FF0E000C32638 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					423F7656259FFA8000C32638 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 423F7635259FF0E000C32638;
 					};
 				};
 			};
@@ -115,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				423F7635259FF0E000C32638 /* TDD-Starter */,
+				423F7656259FFA8000C32638 /* TDD-StarterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +196,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		423F7655259FFA8000C32638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,11 +212,28 @@
 			files = (
 				423F763E259FF0E000C32638 /* ViewController.swift in Sources */,
 				423F763A259FF0E000C32638 /* AppDelegate.swift in Sources */,
+				423F764F259FF7E300C32638 /* CalculatorBrain.swift in Sources */,
 				423F763C259FF0E000C32638 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		423F7653259FFA8000C32638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423F765A259FFA8000C32638 /* TDD_StarterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		423F765D259FFA8000C32638 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 423F7635259FF0E000C32638 /* TDD-Starter */;
+			targetProxy = 423F765C259FFA8000C32638 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		423F763F259FF0E000C32638 /* Main.storyboard */ = {
@@ -319,6 +409,46 @@
 			};
 			name = Release;
 		};
+		423F765F259FFA8000C32638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX4KVUBK56;
+				INFOPLIST_FILE = "TDD-StarterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.KasRoid.TDD-StarterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD-Starter.app/TDD-Starter";
+			};
+			name = Debug;
+		};
+		423F7660259FFA8000C32638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX4KVUBK56;
+				INFOPLIST_FILE = "TDD-StarterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.KasRoid.TDD-StarterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD-Starter.app/TDD-Starter";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +466,15 @@
 			buildConfigurations = (
 				423F764B259FF0E100C32638 /* Debug */,
 				423F764C259FF0E100C32638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		423F765E259FFA8000C32638 /* Build configuration list for PBXNativeTarget "TDD-StarterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423F765F259FFA8000C32638 /* Debug */,
+				423F7660259FFA8000C32638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
