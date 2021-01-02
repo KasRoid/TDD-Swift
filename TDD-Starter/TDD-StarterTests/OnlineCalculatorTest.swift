@@ -21,7 +21,7 @@ class OnlineCalculatorTest: XCTestCase {
     }
     
     func testRetrieveURLFor10DivideBy2() {
-        let url = URL(string: "https://api.mathjs.org/v4/10%2F2")
+        let url = URL(string: "https://api.mathjs.org/v4/?expr=10%2F2")
         let response = onlineCalc.retrieveURLForDivision(dividend: 10, divisor: 2)
         XCTAssert(url == response, "URL is incorrect.")
     }
